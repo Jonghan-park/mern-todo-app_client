@@ -1,5 +1,11 @@
 
+import { useState, useEffect } from 'react'
+
 function App() {
+  const [todos, setTodos] = useState([]);
+  const [popupActive, setPopupActive] = useState(false);
+  const [newTodo, setNewTodo] = useState("");
+
 	return (
 		<div className="App">
 			<h1>Welcome, Joseph</h1>
